@@ -7,9 +7,7 @@ public class Main {
         System.out.print("Enter name of file: ");
         String filename = input.nextLine().strip();
 
-        int numLines = countLinesInFile(filename);
         int[] numbers = readFileIntoArray(filename);
-
         for (int i : numbers) {
             System.out.println(i);
         }

@@ -1,11 +1,10 @@
 import java.io.*;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter name of file: ");
-        String filename = input.nextLine().strip();
+        //Scanner input = new Scanner(System.in);
+        //System.out.print("Enter name of file: ");
+        String filename = "input.txt"; //input.nextLine().strip();
 
         int[] numbers = readFileIntoArray(filename);
         for (int i : numbers) {
